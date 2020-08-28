@@ -1,0 +1,325 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Trebechut MS; 
+}
+
+#top{
+	text-align: center;
+	font-size: 70px;
+	color: white;
+}
+.titleBanner{
+	margin: 0px;
+	padding:0px;
+}
+.playerRegistration
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 5%;
+	width: 450px;
+	margin: 0 auto;
+	margin-top: 40px;
+	background-image: url("./img/opacityWhite70.png");
+}
+.playerRegistration div
+{
+	display: inline-block;
+}
+.playerRegistration input
+{
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: red;
+	height: 30px;
+	width: 165px;
+}
+.playerRegistration img
+{
+	margin: 20px;
+}
+
+.theTacToe
+{
+	position: relative;
+	margin-top: 50px;
+	top: 50px;
+	top: 50px;
+	text-align: center;
+	margin-left:auto;
+    margin-right:auto;
+    width:960px;
+}
+.tblStyle
+{
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	--z-index: -1;
+}
+.btnName
+{
+	text-align: center;
+	margin: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+	color: red;
+	height: 30px;
+	width: 165px;
+}
+.catMessageBox
+{
+	display: none;
+	position: absolute;
+	background-image: url("./img/opacityWhite90.png");
+	border: 5px solid red;
+	border-radius: 25px;
+	width: 500px;
+	height: 160px;
+	top: 50%;
+	left: 50%;
+	margin-top: -80px;
+	margin-left: -250px;
+	z-index: 2147483647;
+	text-align: center;
+	
+}
+.winMessageBox
+{
+	display: none;
+	position: absolute;
+	background-image: url("./img/opacityWhite90.png");
+	border: 5px solid red;
+	border-radius: 25px;
+	width: 500px;
+	height: 300px;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
+	z-index: 2147483647;
+	
+}
+#winnerDiv .tbClass
+{
+	font-size: 30px;
+	height: 460px;
+	text-align: center;
+	height: 175px;
+	margin: 0 auto;
+	padding: 10px;
+}
+#winnerDiv .tbClass img
+{
+	height: 175px;
+}
+.col1
+{
+	width: 200px;
+	display:inline-block;
+	min-width: 200px;
+	max-width: 200px;
+	position: inherit;
+	
+}
+.col2
+{
+	width: 500px;
+	display:inline-block;
+	min-width: 500px;
+	max-width: 500px;
+	position: inherit;
+}
+
+.sqr-blank
+{		
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	z-index: 1;
+}
+.sqr-player0
+{
+	background-image: url("./img/red-xforsquare.png");
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 3 solid red;
+	transition: all 1s;
+}
+.sqr-player1
+{
+	background-image: url("./img/otacforsquare.png");
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	border: 3 solid green;
+	transition: all 1s;
+	
+}
+body
+{
+	background-color:black;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+		background-size: cover;
+		
+}
+
+.gamePlayersClub
+{
+	position: float;
+	box-sizing: border-box;
+	background-image: url("./img/opacityWhite70.png");
+	border-radius: 5% 5% 5% 5%;
+	border: 1px solid black;
+}
+.players
+{
+	border: 1px solid black;
+	border-radius: 0% 0% 5% 5%;
+	
+}
+.players #player0
+{
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+	border-radius: 5%;
+	padding: 5px;
+}
+#imgPlayer0{
+	width: 150px;
+	height: 150px;
+	background:transparent; 
+
+}
+#imgPlayer1{
+	width: 150px;
+	height: 150px;
+	background:transparent; 
+
+}
+.players #player1
+{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+	border-radius: 5%;
+	padding: 5px;
+}
+.players #player1 img
+{
+	margin-top: 20px;
+	
+}
+.players .isTurn
+{
+	box-shadow: 0px 0px 0px 5px blue inset;
+    box-sizing: border-box;
+}
+
+.players .isNotTurn
+{
+	opacity: 0.6;
+}
+.score
+{
+	font-size: 20px;
+	font-style: strong;
+}
+
+.gameDiv 
+{
+	position: float;
+	border: 1px solid;
+	width: 465px;
+	background-image: url("./img/opacityWhite50.png");
+	border-radius: 5%;
+	margin: 0 auto;
+	text-align: center;
+}
+.gameLog
+{
+	position: float;
+	display: inline-block;
+	top: 120px;
+	height: 450px;
+	width: 200px;
+	box-sizing: border-box;
+	background-image: url("./img/opacityWhite50.png");
+	border: 1px solid white;
+	border-radius: 5%;
+}
+.gameDiv div
+{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	color: black;
+	margin: 0 auto;
+	margin: 2px;
+}
+
+
+#sqr1
+{
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+}
+#sqr2
+{
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;	
+	border-left: 1px solid black;	
+}
+#sqr3
+{
+	border-bottom: 3px solid black;
+	border-left: 1px solid black;	
+}
+#sqr4
+{
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;	
+	border-top: 1px solid black;	
+}
+#sqr5
+{
+	border-top: 1px solid black;
+	border-left: 1px solid black;	
+	border-right: 3px solid black;
+	border-bottom: 3px solid black;	
+}
+#sqr6
+{
+	border-top: 1px solid black;
+	border-bottom: 3px solid black;
+	border-left: 1px solid black;	
+}
+#sqr7
+{
+	border-top: 1px solid black;
+	border-right: 3px solid black;	
+}
+#sqr8
+{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 3px solid black;	
+}
+#sqr9
+{
+	border-top: 1px solid black;
+	border-left: 1px solid black;	
+}

@@ -1,0 +1,53 @@
+body{
+
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+    font-family: Trebechut MS;
+    font-size: 50px;
+}
+
+form {
+    width: 500px;
+    border: 2px solid black;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px ;
+
+}
+
+input{
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button{
+    float: right;
+    background: rgb(26, 92, 236);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px ;
+}
+
+button:hover{
+    opacity: .7;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tic-Tac-Toe Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css"">
+		<script type="text/javascript" src="script.js"></script>
+		<style>
+			.navbar {
+			background-color: rgba(7, 4, 4, 0.938);
+			overflow: hidden;
+			}
+
+			.navbar a {
+			float: left;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+			}
+			
+			.navbar a:hover {
+			background-color: rgb(221, 221, 221);
+			color: rgb(228, 10, 10);
+			}
+			.logout{
+				float:right;
+			}
+		</style>
+	</head>
+	
+	<body id="pageBody" > 
+		<div class="navbar"> 
+            <a href="./index.html">HOME</a>
+			<a href="https://codd.cs.gsu.edu/~mmerid2/WP/HW/1/" target="_blank">ABOUT ME</a>
+			<a href="https://codd.cs.gsu.edu/~mmerid2/WP/HW/1/resume.html" target="_blank">RESUME</a>    
+			<span class="logout"> <a href="index.php?logout='1'"> LOGOUT </a> </span>
+        </div> 
+		<div class="theTacToe" id="theTacToe">
+			<div class="titleBanner">
+				<h2 id="top">Welcome To The</h2>
+				<h1 id="top">Tic-Tac-Toe Championship!</h1>
+			</div>
+				<div clas="registerScreen">
+				<form id="registration">
+					<div class="playerRegistration">
+						<div id="player0reg">
+							<img id='imgPlayer0' src='./img/red-x.png'>
+							<p>
+								Player 1 
+							</p>
+							<input type='text' class="GetUsersName" id='player0Name' name='player0Name' value='Player 1' autocomplete='off'>
+							<br />Enter your name
+						</div>
+						<div id="player1reg">
+							<img id='imgPlayer1' src='./img/otac.png'>
+							<p>
+								Player 2 
+							</p>
+							<input type='text' class="GetUsersName" id='player1Name' name='player1Name' value='Player 2' autocomplete='off'>
+							<br />Enter your name
+						</div>
+						<div class="registrationButtons">
+							<input class="btnName" type='button' value='Submit' onClick='initialize()'>
+						</div>
+					</div>
+				</form>		
+			</div>	
+			<div class="tbTacToeDiv">
+				<div id="catGame" class="catMessageBox">
+					<h1>A Cat Game?</h1>
+					<h2>Close match but this a DRAW!</h2>
+					<input class="btnName" type='button' value='Next Game' onClick='nextGame()'>
+				</div>
+				<div id="winGame" class="winMessageBox">
+					<h1>Winner Winner Good Game!</h1>
+					<div id="winnerDiv"></div>
+					<input class="btnName" type='button' value='Next Game' onClick='nextGame()'>
+				</div>
+					
+					<table id="tbTacToe" class="tblStyle">
+						<tr>
+							<td class="col1">						
+								<div class="gamePlayersClub">
+									<h3>Players Club</h3>
+									<input class="btnName" type='button' value='Reset Scores' onClick='resetGame()'>
+									<input class="btnName" type='button' value='Restart Round' onClick='nextGame()'>
+									<div class="players">
+										<div class="player">
+											<div class="isTurn" id="player0">
+												<h3>Player 1: </h3>
+												<img id='imgPlayer0' src='./img/red-x.png'>
+												<div class="score" id='player0Score'>Score: 0</div>
+											</div>
+										</div>
+										<div class="player">
+											<div class="isNotTurn" id="player1">
+												<h3>Player 2: </h3>
+												<img id='imgPlayer1' src='./img/otac.png'>
+												<div class="score" id='player1Score'>Score: 0</div>
+											</div>
+										</div>
+									</div> 
+								</div>
+							</td>
+							<td class="col2">
+								<div class="gameDiv" id="gameDiv">
+
+									<div class="sqr-blank" id="sqr1" onclick="updateScore(this, 1);"></div><div class="sqr-blank" id="sqr2" onclick="updateScore(this, 2);"></div><div class="sqr-blank" id="sqr3" onclick="updateScore(this, 4);"></div><br />
+									<div class="sqr-blank" id="sqr4" onclick="updateScore(this, 8);"></div><div class="sqr-blank" id="sqr5" onclick="updateScore(this, 16);"></div><div class="sqr-blank" id="sqr6" onclick="updateScore(this, 32);"></div><br />
+									<div class="sqr-blank" id="sqr7" onclick="updateScore(this, 64);"></div><div class="sqr-blank" id="sqr8" onclick="updateScore(this, 128);"></div><div class="sqr-blank" id="sqr9" onclick="updateScore(this, 256);"></div>
+								</div>
+							</td>
+							<td class="col3">
+								<div class="gameLog" id="gameLog">
+									<h3>Game Log<h3>
+									<hr />
+									<div id="log">
+									</div>
+								</div>
+							</td>
+							
+						</tr>
+						<tr>
+							<td class="tblFoot" colspan="3">
+							</td>
+						</tr>	
+					</table>
+				
+			</div>
+		</div>
+	</body>
+</html>
